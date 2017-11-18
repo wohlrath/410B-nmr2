@@ -1,1 +1,52 @@
 \section*{Výsledky měření}
+Teplota v laboratoři byla přibližně \SI{20}{\degreeCelsius}.
+
+Měřili jsme 5 vzorků s různou koncentrací CuSO$_4$.
+Naměřené závislosti jsme nafitovali závislostmi \eqref{e:IR} a \eqref{e:SE} (viz graf \ref{g:g}). 
+Z těchto závislostí jsme určili relaxační doby $T_1$ a $T_2$ (viz tabulka \ref{t:T} a graf \ref{g:T}).
+Relaxační rychlosti (převrácené hodnoty relaxačních dob) jsme zanesli do grafu \ref{g:rT} a nafitovali lineární a afinní funkcí pro spin-mřížkovou respektive spin-spinovou relaxační rychlost (viz \emph{Diskuze})\footnote{zápis $c_{\text{CuSO}_4}(\si{\milli M})$ znamená molární objemovou koncentraci vyjádřenou v jednotkách \si{\milli M} }
+\begin{equation*}
+T_1 \approx \frac{\SI{974}{\milli\second}}{c_{\text{CuSO}_4}(\si{\milli M})}
+\end{equation*}
+\begin{equation*}
+T_2 \approx \frac{\SI{756}{\milli\second}}{c_{\text{CuSO}_4}(\si{\milli M})  - 5,08}
+\end{equation*}
+
+
+\begin{graph}[htbp] 
+\centering
+\input{g.tex}
+\caption{Závislost amplitudy signálu na odstupu pulzů $t_w$ (osa $x$ (\si{\ms})).}
+\label{g:g}
+\end{graph}
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{c|ccc}
+číslo vzorku & $c_{\text{CuSO}_4}$ (\si{\milli M}) & $T_1$ (\si{\ms}) & $T_2$ (\si{\ms}) \\
+\hline
+1 & 16 & \num{63.5(3)} & \num{61.6(20)} \\
+2 & 32 & \num{31.8(4)} & \num{29.4(8)} \\
+3 & 48 & \num{20.5(2)} & \num{17.3(4)} \\
+4 & 64 & \num{15.6(3)} & \num{13.6(3)} \\
+5 & 80 & \num{11.8(2)} & \num{9.8(3)} \\
+\end{tabular}
+\caption{Relaxační doby signálu NMR $^1$H v roztocích s proměnnou koncentrací CuSO$_4$}
+\label{t:T}
+\end{tabulka}
+
+\begin{graph}[htbp] 
+\centering
+\input{rT.tex}
+\caption{Převrácené relaxační doby signálu NMR $^1$H v roztocích s proměnnou koncentrací CuSO$_4$}
+\label{g:rT}
+\end{graph}
+
+\begin{graph}[htb] 
+\centering
+\input{T.tex}
+\caption{Relaxační doby signálu NMR $^1$H v roztocích s proměnnou koncentrací CuSO$_4$}
+\label{g:T}
+\end{graph}
+
+

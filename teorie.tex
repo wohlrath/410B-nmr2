@@ -1,1 +1,24 @@
 \section*{Teoretická část}
+Při metodě "inversion recovery" (IR) použijeme $\pi$-pulz ke změně znaménka podélné složky magnetizace. 
+Tu pak necháme relaxovat a po čase $t_w$ použijeme $\pi/2$ pulz k otočení magnetizace do příčného směru.
+Poté budeme pozorovat FID signál, jehož amplituda bude \cite{skripta}
+\begin{equation} \label{e:IR}
+A_{FID}(t_w)= A_0 | 1 - 2 \exp(-t_w/T_1)  | \,,
+\end{equation}
+kde $A_0$ je konstanta a $T_1$ je spin-mřížková relaxační doba.
+
+Spin-spinovou relaxační dobu $T_2$ změříme podle závislosti amplitudy signálu spinového echa (SE) na odstupu pulzů $t_w$, která má podle \cite{skripta} tvar
+\begin{equation} \label{e:SE}
+A_{SE}(t_w)=A_1 \exp(-2t_w/T_1) \exp(-kt_w^3) \,,
+\end{equation}
+kde $A_1$ a $k$ jsou konstanty.
+
+U málo viskózních kapalin platí přibližně \cite{skripta}
+\begin{equation}
+T_1 \approxeq T_2 \,.
+\end{equation}
+
+Paramagnetické příměsy v diamagnetických kapalinách výrazně zkracují obě relaxační doby $T_1$ i $T_2$ \cite{skripta}. Podle \cite{skripta} platí, že relaxační rychlost je přímo úměrná molární objemové koncentraci iontů Cu$^{2+}$
+\begin{equation} \label{e:C}
+\frac{1}{T_1} \propto c_{\text{Cu}^{2+}} \,.
+\end{equation}
